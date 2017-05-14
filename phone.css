@@ -119,6 +119,7 @@
          color: #eee;
          text-decoration: none;
          width:100%;
+         text-align: center;
      }
      .btn-inverse {
          display: inline-block;
@@ -159,7 +160,7 @@
      #about .fixed-width .col-2s {
          vertical-align: middle;
          display: inline-block;
-         width: 50%;
+         width: 100%;
          font-size: 16px;
          text-align: left;
      }

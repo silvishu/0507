@@ -50,8 +50,24 @@
         text-decoration: none;
         color: #e2e2e2;
     }
-    nav .menu a:hover{
-        color: #000;
+/*
+    nav .menu a:hover {
+        color: #b14f8f;
+        transition: all 1s
+    }
+*/
+    nav .menu a::after {
+        content: "";
+        border-bottom: 2px solid #fa0;
+        display: block;
+        margin-top: -15px;
+/*        width:0;從兩邊展開*/
+        transform: scaleX(0);/*從中間展開*/
+        transition: all .3s;
+    }
+    nav .menu a:hover::after {
+/*        width: 100%;*/
+        transform: scaleX(1)
     }
     header {
         padding-top: 300px;
@@ -112,8 +128,8 @@
         text-decoration: none;
     }
     .btn :hover {
-        background-color: #000;
-        color: #ccc;
+        background-color: #ccc;
+        color: #000;
     }
     .btn-inverse {
         display: inline-block;
@@ -134,7 +150,7 @@
         display: inline-block;
         font-size: 0;
     }
-   #about {
+    #about {
         text-align: center;
     }
     #about .fixed-width {

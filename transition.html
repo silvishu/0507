@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height:100px;
+            background-color: antiquewhite;
+/*            transition:background-color 3s; width 3s*/
+/*            transition: all .5s;*/
+            transition: width 1s, height 5s 1s
+        }
+        .box:hover {
+            background-color:brown;
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
